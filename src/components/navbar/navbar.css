@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  position: fixed;
+  top: -100%;
+  z-index: 7;
+  transition: all 0.5s;
+}
+
+.logo {
+  padding: 15px;
+  position: relative;
+  left: -100%;
+}
+
+.voyage {
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  z-index: 8;
+  animation-name: slideTop;
+  animation-duration: 1s;
+}
+
+@keyframes slideTop {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.voyage img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.logo a img {
+  width: 100px;
+}
+
+.logo a img:hover {
+  transition: all 0.5s;
+  transform: scale(0.9) rotate(-6deg);
+  cursor: pointer;
+}
+
+.navigation {
+  margin-right: 50px;
+  margin-top: -5px;
+  height: 70px;
+  right: -100%;
+  position: relative;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  display: inline-flex;
+  text-indent: 50px;
+  margin-top: 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header-bg {
+  background-color: rgba(0, 109, 117, 0.562);
+  top: 0px;
+}
+
+.header-bg .navigation {
+  right: 0px;
+  transition: all 1s;
+}
+
+.header-bg .header {
+  top: 0px;
+  transition: 0.9s;
+}
+
+.header-bg .logo {
+  left: 0px;
+  transition: all 1s;
+}

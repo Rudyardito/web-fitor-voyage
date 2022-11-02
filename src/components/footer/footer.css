@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#Contact {
+  background-color: #ffde59;
+  width: 100%;
+}
+
+.judul-footer {
+  margin-left: 15%;
+}
+
+.contact-us {
+  margin-left: 15%;
+}
+
+.white-line {
+  width: 75%;
+  margin: auto;
+}
+
+.white-line span {
+  background-color: white;
+  width: 100%;
+}

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.jumbotron {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  margin-top: -60px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slogan-satu {
+  width: 50%;
+  margin-top: -600px;
+  position: relative;
+  animation-name: slideLeft;
+  animation-duration: 2s;
+}
+
+@keyframes slideLeft {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.slogan-satu h1 {
+  padding-left: 100px;
+  font-size: 20pt;
+  letter-spacing: 50px;
+}
+
+.slogan-satu h1 span {
+  font-size: 70pt;
+  letter-spacing: 10px;
+  color: #03989e;
+  font-weight: bold;
+}
+
+.slogan-dua {
+  width: 50%;
+  /* padding-left: 1080px; */
+  float: right;
+  margin-top: -600px;
+  position: relative;
+  animation-name: slideRight;
+  animation-duration: 2s;
+}
+
+@keyframes slideRight {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.slogan-dua h1 {
+  padding-left: 400px;
+  font-size: 20pt;
+  letter-spacing: 60px;
+}
+
+.slogan-dua h1 span {
+  font-size: 70pt;
+  letter-spacing: 10px;
+  color: #03989e;
+  font-weight: bold;
+}

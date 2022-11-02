@@ -1,0 +1,45 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.popup-inner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 5vh;
+  height: 5vh;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.x-btn {
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity: 0.7;
+}
+
+.x-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 1.2s;
+}
