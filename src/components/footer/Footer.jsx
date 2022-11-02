@@ -13,9 +13,7 @@ function footer() {
             <a href="#">HIT US UP!</a>
           </button>
         </div>
-        <div className="white-line">
-          <span>hellow world</span>
-        </div>
+        <div className="white-line"></div>
       </div>
     </>
   );

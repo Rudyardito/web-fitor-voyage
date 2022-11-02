@@ -20,6 +20,7 @@
 
 .slogan-satu {
   width: 50%;
+  float: left;
   margin-top: -600px;
   position: relative;
   animation-name: slideLeft;
@@ -50,9 +51,9 @@
 
 .slogan-dua {
   width: 50%;
-  /* padding-left: 1080px; */
   float: right;
   margin-top: -600px;
+  align-content: center;
   position: relative;
   animation-name: slideRight;
   animation-duration: 2s;

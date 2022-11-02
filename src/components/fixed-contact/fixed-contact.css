@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-fixed {
+  position: fixed;
+  z-index: 7;
+  left: 87%;
+  bottom: 5%;
+  width: 10%;
+  height: 5%;
+  background-color: #03989e;
+  border: 3px solid orangered;
+  border-radius: 50px;
+}
+
+.contact-fixed ul li {
+  list-style-type: none;
+  display: inline-flex;
+  text-indent: 0.7vh;
+}
+
+.contact-fixed ul li a {
+  font-size: 200%;
+  color: white;
+}
+
+.contact-fixed ul li a:hover {
+  color: #ffde59;
+}
