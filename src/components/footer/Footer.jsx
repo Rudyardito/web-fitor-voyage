@@ -14,7 +14,7 @@ function footer() {
           </button>
         </div>
         <div className="white-line">
-          <span>.</span>
+          <span>hellow world</span>
         </div>
       </div>
     </>
