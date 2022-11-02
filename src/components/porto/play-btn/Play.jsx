@@ -30,6 +30,7 @@ class Play extends Component {
     const shadowSm = size / 20;
     const shadowMd = size / 10;
     const shadowLg = size / 5;
+    const shadowFull = size * 5;
     const cubicBezier = "cubic-bezier(0.77, 0, 0.175, 1)";
 
     let boxShadow = `0px 0px 0px 0px ${strokeColor}10, 
@@ -37,12 +38,14 @@ class Play extends Component {
 
     if (state.mouseOver && !state.focus) {
       boxShadow = `0px 0px 0px ${shadowMd}px ${strokeColor}50, 
-                      0px 0px 0px ${shadowLg}px ${strokeColor}50`;
+                      0px 0px 0px ${shadowLg}px ${strokeColor}50, 
+                        0px 0px 0px ${shadowFull}px ${strokeColor}70`;
     }
 
     if (state.mouseOver && state.focus) {
       boxShadow = `0px 0px 0px ${shadowSm}px ${strokeColor}50, 
-                      0px 0px 0px ${shadowMd}px ${strokeColor}50`;
+                      0px 0px 0px ${shadowMd}px ${strokeColor}50, 
+                        0px 0px 0px ${shadowFull}px ${strokeColor}70`;
     }
 
     const containerStyles = {
