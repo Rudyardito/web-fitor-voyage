@@ -93,17 +93,11 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  /* top: 50%; */
-  /* background-color: rgba(0, 0, 0, 0.377); */
 }
 
 .play-btn {
   display: flex;
   justify-content: center;
-  /* background-color: black; */
-  /* height: 100%;
-  width: 100%; */
-  /* background-color: aqua; */
   width: 25%;
   margin: auto;
   position: absolute;
@@ -111,14 +105,9 @@
   height: 20%;
 }
 
-/* .batox .bg-play:hover {
+.batox .bg-play:hover {
   background-color: rgba(0, 0, 0, 0.349);
-} */
-
-/* .batox img:hover {
-  opacity: 0.5;
-  transform: scale(1.3);
-} */
+}
 
 .react-player-pop {
   z-index: 99;

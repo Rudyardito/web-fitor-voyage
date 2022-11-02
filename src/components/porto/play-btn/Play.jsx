@@ -22,7 +22,7 @@ class Play extends Component {
 
   render() {
     const state = this.state;
-    const strokeColor = "#000000";
+    const strokeColor = "#ffde59";
     const fillColor = "#fff";
     const size = 100;
     const dashArray = 110;
