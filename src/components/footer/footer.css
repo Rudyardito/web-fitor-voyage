@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300&family=Manrope:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@500&family=Rajdhani&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,19 +13,110 @@
 }
 
 .judul-footer {
-  margin-left: 15%;
+  margin-left: 12%;
+  padding-top: 8%;
+}
+
+.judul-footer h2 {
+  font-size: 200%;
+  font-family: "Anton", sans-serif;
 }
 
 .contact-us {
-  margin-left: 15%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  margin-left: 13.5%;
+  height: 3%;
+  width: 9%;
+}
+
+.contact-us button {
+  height: 5vh;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  width: 100%;
+}
+
+.contact-us img {
+  width: 10%;
+  margin-left: 0.7%;
+  margin-bottom: 3%;
+}
+
+.contact-us a {
+  text-decoration: none;
+  border-top: 4px solid rgba(255, 0, 0, 0);
+  border-left: 28px solid rgba(255, 0, 0, 0);
+  border-right: 28px solid rgba(255, 0, 0, 0);
+  border-bottom: 4px solid rgba(255, 0, 0, 0);
+  border-radius: 75px;
+  color: white;
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.contact-us button:hover {
+  background-color: #03989e;
+}
+
+.contact-us a:hover {
+  color: #ffde59;
 }
 
 .white-line {
+  border-bottom: 6px solid white;
+  border-radius: 5px;
   width: 75%;
-  margin: auto;
+  position: absolute;
+  left: 11%;
+  margin: 0.5% auto;
 }
 
-.white-line span {
-  background-color: white;
+.address {
+  margin-left: 11%;
+  margin-top: 5%;
+}
+
+.address h1 {
+  font-size: 200%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+}
+
+.address p {
+  font-weight: bold;
+}
+
+.address p a {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.address p a:hover {
+  color: #03989e;
+  text-decoration: underline;
+}
+
+.white-second-line {
+  border-bottom: 6px solid white;
+  border-radius: 5px;
+  width: 75%;
+  position: absolute;
+  left: 11%;
+  margin-top: 2%;
+}
+
+.copyright {
   width: 100%;
+  margin-top: 5%;
+  padding-bottom: 3%;
+}
+
+.copyright p {
+  text-align: center;
 }
