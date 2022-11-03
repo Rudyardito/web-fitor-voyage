@@ -7,7 +7,7 @@
 .contact-fixed {
   position: fixed;
   z-index: 7;
-  left: 87%;
+  left: 100%;
   bottom: 5%;
   width: 10%;
   height: 5%;
@@ -20,6 +20,7 @@
   list-style-type: none;
   display: inline-flex;
   text-indent: 0.7vh;
+  margin-top: -5%;
 }
 
 .contact-fixed ul li a {
@@ -29,4 +30,9 @@
 
 .contact-fixed ul li a:hover {
   color: #ffde59;
+}
+
+.contact-slidein {
+  left: 87%;
+  transition: all 1s;
 }

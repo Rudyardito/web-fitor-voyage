@@ -196,7 +196,7 @@ function Porto() {
       <div id="Works">
         <div className="judul-porto">
           <h1>OUR WORKS</h1>
-          <h2>CLIENTS THAT TRUSTED US</h2>
+          <h2>TRUSTED BY</h2>
         </div>
         <div className="slideshow">
           <Carousel

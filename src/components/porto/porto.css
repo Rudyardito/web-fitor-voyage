@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Oswald:wght@500&family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300&family=Manrope:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: "Bebas Neue", cursive;
 }
 
 #Works {
@@ -17,6 +17,7 @@
   text-align: center;
   font-size: 80px;
   color: #ffde59;
+  font-family: "Bebas Neue", cursive;
 }
 
 .judul-porto h2 {
@@ -24,6 +25,7 @@
   font-size: 30px;
   color: #ffde59;
   padding-bottom: 20px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .slideshow {
@@ -42,6 +44,10 @@
   text-align: center;
   padding-bottom: 50px;
   margin-left: 20px;
+}
+
+.sfm a {
+  font-family: "Bebas Neue", cursive;
 }
 
 .sfm button {
