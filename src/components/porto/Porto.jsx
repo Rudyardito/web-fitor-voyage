@@ -10,6 +10,17 @@ import { BsArrowBarRight } from "@react-icons/all-files/bs/BsArrowBarRight";
 import Play from "./play-btn/Play";
 
 function Porto() {
+  const [fadeIn, setFadeIn] = useState(false);
+  const zoomIn = () => {
+    if (window.scrollY >= 500) {
+      setFadeIn(true);
+    } else {
+      setFadeIn(false);
+    }
+  };
+
+  window.addEventListener("scroll", zoomIn);
+
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -194,7 +205,9 @@ function Porto() {
   return (
     <>
       <div id="Works">
-        <div className="judul-porto">
+        <div
+          className={fadeIn ? "judul-porto judul-porto-fadein" : "judul-porto"}
+        >
           <h1>OUR WORKS</h1>
           <h2>TRUSTED BY</h2>
         </div>

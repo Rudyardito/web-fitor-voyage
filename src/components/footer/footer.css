@@ -15,6 +15,15 @@
 .judul-footer {
   margin-left: 12%;
   padding-top: 8%;
+  transform: translate3d(25%, 0, 0);
+  opacity: 0;
+}
+
+/* animasi nya ga masuk pren, gimana donk? */
+
+.judul-footer-in {
+  transform: none;
+  opacity: 1;
 }
 
 .judul-footer h2 {
