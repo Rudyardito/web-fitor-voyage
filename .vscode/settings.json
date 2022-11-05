@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "typescript.format.insertSpaceAfterTypeAssertion": true,
   "html.format.indentInnerHtml": true
 }

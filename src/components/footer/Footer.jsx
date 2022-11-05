@@ -1,12 +1,26 @@
 import React from "react";
 import "./footer.css";
 import foot from "../../assets/image/icon1.png";
+import { useState } from "react";
 
-function footer() {
+function Footer() {
+  // saya bingung di sini pren, ga mau masuk useStatenya
+  const [rightIn, setRightIn] = useState(false);
+  const changeRight = () => {
+    if (window.scrollY >= 3000) {
+      setRightIn(true);
+    } else {
+      setRightIn(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeRight);
+
   return (
     <>
       <div id="Contact">
-        <div className="judul-footer">
+        {/* bingung saya pren, tolong XD */}
+        <div className={rightIn ? "judul-footer judul-footer-in" : "judul-footer"}>
           <h2>Lets work together!</h2>
         </div>
         <div className="contact-us">
@@ -46,4 +60,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;

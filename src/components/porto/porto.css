@@ -8,8 +8,18 @@
 #Works {
   background-color: black;
   margin-top: -5px;
-  /* gap buat footer doank jangan di hapus */
-  height: 2000px;
+  padding-bottom: 5%;
+}
+
+.judul-porto {
+  opacity: 0;
+  transform: translate3d(-25%, 0, 0);
+}
+
+.judul-porto-fadein {
+  opacity: 1;
+  transition: all 2s;
+  transform: none;
 }
 
 .judul-porto h1 {

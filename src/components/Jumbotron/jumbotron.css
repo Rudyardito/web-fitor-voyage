@@ -30,10 +30,12 @@
 
 @keyframes slideLeft {
   from {
-    top: -1000px;
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
   }
   to {
-    top: 0px;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 
@@ -64,10 +66,12 @@
 
 @keyframes slideRight {
   from {
-    top: -1000px;
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
   }
   to {
-    top: 0px;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 

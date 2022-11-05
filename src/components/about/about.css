@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#About {
+  background-color: white;
+  width: 100%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.about-judul {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+}
+
+.about-judul-in {
+  transform: none;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.about-judul h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+.about-vids {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+
+.about-logo-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15%;
+  opacity: 0;
+}
+
+.about-logo-text-in {
+  opacity: 1;
+  transition: all 2s;
+}
+
+.about-logo {
+  width: 50%;
+}
+
+.about-logo img {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h2 {
+  width: 75%;
+  display: block;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-text p {
+  width: 75%;
+  display: block;
+  margin: auto;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.about-text span {
+  width: 75%;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.nyoman {
+  width: 100%;
+  display: block;
+  margin: auto;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
