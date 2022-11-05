@@ -20,7 +20,9 @@ function Footer() {
     <>
       <div id="Contact">
         {/* bingung saya pren, tolong XD */}
-        <div className={rightIn ? "judul-footer judul-footer-in" : "judul-footer"}>
+        <div
+          className={rightIn ? "judul-footer judul-footer-in" : "judul-footer"}
+        >
           <h2>Lets work together!</h2>
         </div>
         <div className="contact-us">
