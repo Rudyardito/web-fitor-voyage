@@ -5,23 +5,23 @@ import { useState } from "react";
 
 function Footer() {
   // saya bingung di sini pren, ga mau masuk useStatenya
-  const [rightIn, setRightIn] = useState(false);
-  const changeRight = () => {
-    if (window.scrollY >= 3000) {
-      setRightIn(true);
-    } else {
-      setRightIn(false);
-    }
-  };
+  // const [rightIn, setRightIn] = useState(false);
+  // const changeRight = () => {
+  //   if (window.scrollY >= 3000) {
+  //     setRightIn(true);
+  //   } else {
+  //     setRightIn(false);
+  //   }
+  // };
 
-  window.addEventListener("scroll", changeRight);
+  // window.addEventListener("scroll", changeRight);
 
   return (
     <>
       <div id="Contact">
-        {/* bingung saya pren, tolong XD */}
         <div
-          className={rightIn ? "judul-footer judul-footer-in" : "judul-footer"}
+          className="judul-footer"
+          // {rightIn ? "judul-footer judul-footer-in" : "judul-footer"}
         >
           <h2>Lets work together!</h2>
         </div>

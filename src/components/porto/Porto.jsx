@@ -18,15 +18,11 @@ function Porto() {
       setFadeIn(false);
     }
   };
-
   window.addEventListener("scroll", zoomIn);
-
   const [index, setIndex] = useState(0);
-
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
   const [bjbPopup, setBjbPopup] = useState(false);
   const [eldodaPopup, setEldodaPopup] = useState(false);
   const [moladinPopup, setMoladinPopup] = useState(false);
@@ -36,73 +32,68 @@ function Porto() {
   const [firstPopup, setFirstPopup] = useState(false);
   const [secondPopup, setSecondPopup] = useState(false);
   const [thirdPopup, setThirdPopup] = useState(false);
-
   const array_source = [
     {
       img: bjb,
-      url: "https://www.youtube.com/watch?v=86M4_QxkgvA",
+      url: "https://www.youtube.com/embed/86M4_QxkgvA",
       trigger: bjbPopup,
       setTrigger: setBjbPopup,
     },
     {
       img: eldoda,
-      url: "https://www.youtube.com/watch?v=vySRj0EL2ss",
+      url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: eldodaPopup,
       setTrigger: setEldodaPopup,
     },
     {
       img: moladin,
-      url: "https://www.youtube.com/watch?v=eGdnGiMnAa4",
+      url: "https://www.youtube.com/embed/eGdnGiMnAa4",
       trigger: moladinPopup,
       setTrigger: setMoladinPopup,
     },
   ];
-
   const array_source1 = [
     {
       img: eldoda,
-      url: "https://www.youtube.com/watch?v=vySRj0EL2ss",
+      url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: satuPopup,
       setTrigger: setSatuPopup,
     },
     {
       img: eldoda,
-      url: "https://www.youtube.com/watch?v=vySRj0EL2ss",
+      url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: duaPopup,
       setTrigger: setDuaPopup,
     },
     {
       img: eldoda,
-      url: "https://www.youtube.com/watch?v=vySRj0EL2ss",
+      url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: tigaPopup,
       setTrigger: setTigaPopup,
     },
   ];
-
   const array_sourceSecond = [
     {
       img: moladin,
-      url: "https://www.youtube.com/watch?v=vySRj0EL2ss",
+      url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: firstPopup,
       setTrigger: setFirstPopup,
     },
     {
       img: moladin,
-      url: "https://www.youtube.com/watch?v=vySRj0EL2ss",
+      url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: secondPopup,
       setTrigger: setSecondPopup,
     },
     {
       img: moladin,
-      url: "https://www.youtube.com/watch?v=vySRj0EL2ss",
+      url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: thirdPopup,
       setTrigger: setThirdPopup,
     },
   ];
-
   const carousel_data = [];
   const popup_trigger_data = [];
-
   for (const source of array_source) {
     carousel_data.push(
       <button className="batox" onClick={() => source["setTrigger"](true)}>
@@ -115,7 +106,6 @@ function Porto() {
       </button>
     );
   }
-
   for (const source of array_source) {
     popup_trigger_data.push(
       <Popup trigger={source["trigger"]} setTrigger={source["setTrigger"]}>
@@ -131,10 +121,8 @@ function Porto() {
       </Popup>
     );
   }
-
   const carousel1_data = [];
   const popup1_trigger_data = [];
-
   for (const source1 of array_source1) {
     carousel1_data.push(
       <button className="batox" onClick={() => source1["setTrigger"](true)}>
@@ -147,7 +135,6 @@ function Porto() {
       </button>
     );
   }
-
   for (const source1 of array_source1) {
     popup1_trigger_data.push(
       <Popup trigger={source1["trigger"]} setTrigger={source1["setTrigger"]}>
@@ -163,10 +150,8 @@ function Porto() {
       </Popup>
     );
   }
-
   const carouselSecond_data = [];
   const popupSecond_trigger_data = [];
-
   for (const sourceSecond of array_sourceSecond) {
     carouselSecond_data.push(
       <button
@@ -182,7 +167,6 @@ function Porto() {
       </button>
     );
   }
-
   for (const sourceSecond of array_sourceSecond) {
     popupSecond_trigger_data.push(
       <Popup
@@ -201,7 +185,6 @@ function Porto() {
       </Popup>
     );
   }
-
   return (
     <>
       <div id="Works">

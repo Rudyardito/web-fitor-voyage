@@ -8,7 +8,7 @@ const Jumbotron = () => {
       <div className="jumbotron">
         <ReactPlayer
           className="react-player"
-          url={"https://www.youtube.com/watch?v=xkePSjoXd1Q"}
+          url={"https://www.youtube.com/embed/xkePSjoXd1Q"}
           playing={true}
           loop={true}
           controls={false}
