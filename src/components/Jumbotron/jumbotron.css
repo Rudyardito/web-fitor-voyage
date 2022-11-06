@@ -8,7 +8,21 @@
 
 .jumbotron {
   position: relative;
-  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  padding-top: 56.25%;
+  animation-name: hoofIn;
+  animation-duration: 3s;
+}
+
+@keyframes hoofIn {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 
 .react-player {
