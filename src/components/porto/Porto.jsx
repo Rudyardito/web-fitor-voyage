@@ -4,6 +4,8 @@ import Carousel from "react-bootstrap/Carousel";
 import bjb from "../../assets/image/bjb.png";
 import eldoda from "../../assets/image/Elldoda.png";
 import moladin from "../../assets/image/Moladin.png";
+import mandiri from "../../assets/image/mandiri.png";
+import ghost from "../../assets/image/Ghostober.png";
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { BsArrowBarRight } from "@react-icons/all-files/bs/BsArrowBarRight";
@@ -54,13 +56,13 @@ function Porto() {
   ];
   const array_source1 = [
     {
-      img: eldoda,
+      img: mandiri,
       url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: satuPopup,
       setTrigger: setSatuPopup,
     },
     {
-      img: eldoda,
+      img: ghost,
       url: "https://www.youtube.com/embed/vySRj0EL2ss",
       trigger: duaPopup,
       setTrigger: setDuaPopup,

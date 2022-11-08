@@ -17,19 +17,28 @@ const Jumbotron = () => {
           height="111%"
         />
         <div className="slogan-satu">
-          <h1>
-            CREATING
-            <br />
-            <span>INNOVATION</span>
-          </h1>
+          <div className="satu">
+            <h1>
+              CREATING
+              <br />
+              <span>INNOVATION</span>
+            </h1>
+          </div>
+          <div className="dua">
+            <h1>
+              THROUGH
+              <br />
+              <span>MULTIMEDIA</span>
+            </h1>
+          </div>
         </div>
-        <div className="slogan-dua">
+        {/* <div className="slogan-dua">
           <h1>
             THROUGH
             <br />
             <span>MULTIMEDIA</span>
           </h1>
-        </div>
+        </div> */}
       </div>
     </>
   );

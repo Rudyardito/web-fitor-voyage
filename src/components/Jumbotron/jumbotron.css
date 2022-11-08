@@ -34,12 +34,16 @@
 }
 
 .slogan-satu {
-  width: 50%;
-  float: left;
+  width: 100%;
+  /* float: left; */
+  /* inset: 30% 50% 30% 0; */
+  z-index: 10;
   margin-top: -600px;
   position: relative;
   animation-name: slideLeft;
   animation-duration: 2s;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @keyframes slideLeft {
@@ -53,53 +57,46 @@
   }
 }
 
-.slogan-satu h1 {
-  padding-left: 100px;
-  font-size: 20pt;
-  letter-spacing: 50px;
+.satu {
+  font-size: 25pt;
+  letter-spacing: 47px;
   font-family: "Bebas Neue", cursive;
+  text-indent: 5%;
+  margin-right: 15%;
 }
 
-.slogan-satu h1 span {
+.satu span {
   font-size: 70pt;
-  letter-spacing: 10px;
+  letter-spacing: 11px;
   color: #03989e;
   font-weight: bold;
   font-family: "Bebas Neue", cursive;
+  line-height: 80%;
 }
 
-.slogan-dua {
-  width: 50%;
-  float: right;
-  margin-top: -600px;
-  align-content: center;
-  position: relative;
-  animation-name: slideRight;
-  animation-duration: 2s;
-}
-
-@keyframes slideRight {
-  from {
-    transform: translate3d(0, -100%, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.slogan-dua h1 {
-  padding-left: 400px;
-  font-size: 20pt;
-  letter-spacing: 60px;
+.dua {
+  font-size: 25pt;
+  letter-spacing: 55px;
   font-family: "Bebas Neue", cursive;
+  text-indent: 5%;
+  margin-left: 15%;
 }
 
-.slogan-dua h1 span {
+.dua span {
   font-size: 70pt;
-  letter-spacing: 10px;
+  letter-spacing: 11px;
   color: #03989e;
   font-weight: bold;
   font-family: "Bebas Neue", cursive;
+  line-height: 80%;
 }
+
+.satu,
+.dua {
+  width: 100%;
+  text-align: center;
+}
+
+/* .dua {
+  margin-left: 30%;
+} */
