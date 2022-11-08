@@ -1,13 +1,15 @@
-import "./porto.css";
-import Popup from "./popup/Popup";
-import Carousel from "react-bootstrap/Carousel";
-import bjb from "../../assets/image/bjb.png";
-import eldoda from "../../assets/image/Elldoda.png";
-import moladin from "../../assets/image/Moladin.png";
-import React, { useState } from "react";
-import ReactPlayer from "react-player";
-import { BsArrowBarRight } from "@react-icons/all-files/bs/BsArrowBarRight";
-import Play from "./play-btn/Play";
+import './porto.css';
+import Popup from './popup/Popup';
+import Carousel from 'react-bootstrap/Carousel';
+import bjb from '../../assets/image/bjb.png';
+import eldoda from '../../assets/image/Elldoda.png';
+import moladin from '../../assets/image/Moladin.png';
+import mandiri from '../../assets/image/mandiri.png';
+import ghost from '../../assets/image/Ghostober.png';
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player';
+import { BsArrowBarRight } from '@react-icons/all-files/bs/BsArrowBarRight';
+import Play from './play-btn/Play';
 
 function Porto() {
   const [fadeIn, setFadeIn] = useState(false);
@@ -18,7 +20,7 @@ function Porto() {
       setFadeIn(false);
     }
   };
-  window.addEventListener("scroll", zoomIn);
+  window.addEventListener('scroll', zoomIn);
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -35,39 +37,39 @@ function Porto() {
   const array_source = [
     {
       img: bjb,
-      url: "https://www.youtube.com/embed/86M4_QxkgvA",
+      url: 'https://www.youtube.com/embed/86M4_QxkgvA',
       trigger: bjbPopup,
       setTrigger: setBjbPopup,
     },
     {
       img: eldoda,
-      url: "https://www.youtube.com/embed/vySRj0EL2ss",
+      url: 'https://www.youtube.com/embed/vySRj0EL2ss',
       trigger: eldodaPopup,
       setTrigger: setEldodaPopup,
     },
     {
       img: moladin,
-      url: "https://www.youtube.com/embed/eGdnGiMnAa4",
+      url: 'https://www.youtube.com/embed/eGdnGiMnAa4',
       trigger: moladinPopup,
       setTrigger: setMoladinPopup,
     },
   ];
   const array_source1 = [
     {
-      img: eldoda,
-      url: "https://www.youtube.com/embed/vySRj0EL2ss",
+      img: mandiri,
+      url: 'https://www.youtube.com/embed/vySRj0EL2ss',
       trigger: satuPopup,
       setTrigger: setSatuPopup,
     },
     {
-      img: eldoda,
-      url: "https://www.youtube.com/embed/vySRj0EL2ss",
+      img: ghost,
+      url: 'https://www.youtube.com/embed/vySRj0EL2ss',
       trigger: duaPopup,
       setTrigger: setDuaPopup,
     },
     {
       img: eldoda,
-      url: "https://www.youtube.com/embed/vySRj0EL2ss",
+      url: 'https://www.youtube.com/embed/vySRj0EL2ss',
       trigger: tigaPopup,
       setTrigger: setTigaPopup,
     },
@@ -75,19 +77,19 @@ function Porto() {
   const array_sourceSecond = [
     {
       img: moladin,
-      url: "https://www.youtube.com/embed/vySRj0EL2ss",
+      url: 'https://www.youtube.com/embed/vySRj0EL2ss',
       trigger: firstPopup,
       setTrigger: setFirstPopup,
     },
     {
       img: moladin,
-      url: "https://www.youtube.com/embed/vySRj0EL2ss",
+      url: 'https://www.youtube.com/embed/vySRj0EL2ss',
       trigger: secondPopup,
       setTrigger: setSecondPopup,
     },
     {
       img: moladin,
-      url: "https://www.youtube.com/embed/vySRj0EL2ss",
+      url: 'https://www.youtube.com/embed/vySRj0EL2ss',
       trigger: thirdPopup,
       setTrigger: setThirdPopup,
     },
@@ -96,8 +98,8 @@ function Porto() {
   const popup_trigger_data = [];
   for (const source of array_source) {
     carousel_data.push(
-      <button className="batox" onClick={() => source["setTrigger"](true)}>
-        <img src={source["img"]} />
+      <button className="batox" onClick={() => source['setTrigger'](true)}>
+        <img src={source['img']} />
         <div className="bg-play">
           <div className="play-btn">
             <Play />
@@ -108,16 +110,8 @@ function Porto() {
   }
   for (const source of array_source) {
     popup_trigger_data.push(
-      <Popup trigger={source["trigger"]} setTrigger={source["setTrigger"]}>
-        <ReactPlayer
-          className="react-player-pop"
-          url={source["url"]}
-          playing={true}
-          loop={true}
-          controls={true}
-          height="90vh"
-          width="82%"
-        />
+      <Popup trigger={source['trigger']} setTrigger={source['setTrigger']}>
+        <ReactPlayer className="react-player-pop" url={source['url']} playing={true} loop={true} controls={true} height="90vh" width="82%" />
       </Popup>
     );
   }
@@ -125,8 +119,8 @@ function Porto() {
   const popup1_trigger_data = [];
   for (const source1 of array_source1) {
     carousel1_data.push(
-      <button className="batox" onClick={() => source1["setTrigger"](true)}>
-        <img src={source1["img"]} />
+      <button className="batox" onClick={() => source1['setTrigger'](true)}>
+        <img src={source1['img']} />
         <div className="bg-play">
           <div className="play-btn">
             <Play />
@@ -137,16 +131,8 @@ function Porto() {
   }
   for (const source1 of array_source1) {
     popup1_trigger_data.push(
-      <Popup trigger={source1["trigger"]} setTrigger={source1["setTrigger"]}>
-        <ReactPlayer
-          className="react-player-pop"
-          url={source1["url"]}
-          playing={true}
-          loop={true}
-          controls={true}
-          height="90vh"
-          width="82%"
-        />
+      <Popup trigger={source1['trigger']} setTrigger={source1['setTrigger']}>
+        <ReactPlayer className="react-player-pop" url={source1['url']} playing={true} loop={true} controls={true} height="90vh" width="82%" />
       </Popup>
     );
   }
@@ -154,11 +140,8 @@ function Porto() {
   const popupSecond_trigger_data = [];
   for (const sourceSecond of array_sourceSecond) {
     carouselSecond_data.push(
-      <button
-        className="batox"
-        onClick={() => sourceSecond["setTrigger"](true)}
-      >
-        <img src={sourceSecond["img"]} />
+      <button className="batox" onClick={() => sourceSecond['setTrigger'](true)}>
+        <img src={sourceSecond['img']} />
         <div className="bg-play">
           <div className="play-btn">
             <Play />
@@ -169,51 +152,28 @@ function Porto() {
   }
   for (const sourceSecond of array_sourceSecond) {
     popupSecond_trigger_data.push(
-      <Popup
-        trigger={sourceSecond["trigger"]}
-        setTrigger={sourceSecond["setTrigger"]}
-      >
-        <ReactPlayer
-          className="react-player-pop"
-          url={sourceSecond["url"]}
-          playing={true}
-          loop={true}
-          controls={true}
-          height="90vh"
-          width="82%"
-        />
+      <Popup trigger={sourceSecond['trigger']} setTrigger={sourceSecond['setTrigger']}>
+        <ReactPlayer className="react-player-pop" url={sourceSecond['url']} playing={true} loop={true} controls={true} height="90vh" width="82%" />
       </Popup>
     );
   }
   return (
     <>
       <div id="Works">
-        <div
-          className={fadeIn ? "judul-porto judul-porto-fadein" : "judul-porto"}
-        >
+        <div className={fadeIn ? 'judul-porto judul-porto-fadein' : 'judul-porto'}>
           <h1>OUR WORKS</h1>
           <h2>TRUSTED BY</h2>
         </div>
         <div className="slideshow">
-          <Carousel
-            className="w-100 indect"
-            activeIndex={index}
-            onSelect={handleSelect}
-          >
+          <Carousel className="w-100 indect" activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
-              <div className="d-flex justify-content-center">
-                {carousel_data}
-              </div>
+              <div className="d-flex justify-content-center">{carousel_data}</div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="d-flex justify-content-center">
-                {carousel1_data}
-              </div>
+              <div className="d-flex justify-content-center">{carousel1_data}</div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="d-flex justify-content-center">
-                {carouselSecond_data}
-              </div>
+              <div className="d-flex justify-content-center">{carouselSecond_data}</div>
             </Carousel.Item>
           </Carousel>
         </div>
