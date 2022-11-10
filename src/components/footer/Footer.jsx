@@ -28,7 +28,8 @@ function Footer() {
         <div className="contact-us">
           <button>
             <a href="https://wa.me/+6285926841538" target="_blank">
-              HIT US UP! <img src={foot} alt="icon" />
+              HIT US UP!
+              <img src={foot} alt="icon" />
             </a>
           </button>
         </div>

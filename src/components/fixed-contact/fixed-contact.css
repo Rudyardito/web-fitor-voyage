@@ -19,12 +19,12 @@
 .contact-fixed ul li {
   list-style-type: none;
   display: inline-flex;
-  text-indent: 0.7vh;
-  margin-top: -5%;
+  margin-left: 14%;
+  margin-top: 3.5%;
 }
 
 .contact-fixed ul li a {
-  font-size: 200%;
+  font-size: 175%;
   color: white;
 }
 
