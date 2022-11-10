@@ -220,9 +220,9 @@ function Porto() {
           </Carousel>
         </div>
         <div className="sfm">
-          <button className="button">
+          <button>
             <a href="#">
-              SEE FOR MORE <BsArrowBarRight />
+              SEE FOR MORE <BsArrowBarRight className="arrowIc" />
             </a>
           </button>
         </div>
