@@ -37,7 +37,7 @@
   width: 100%;
   /* float: left; */
   /* inset: 30% 50% 30% 0; */
-  z-index: 10;
+  z-index: 6;
   margin-top: -600px;
   position: relative;
   animation-name: slideDown;
@@ -62,7 +62,7 @@
   letter-spacing: 47px;
   font-family: "Bebas Neue", cursive;
   text-indent: 5%;
-  margin-right: 15%;
+  margin-right: 10%;
 }
 
 .satu span {
@@ -79,7 +79,7 @@
   letter-spacing: 55px;
   font-family: "Bebas Neue", cursive;
   text-indent: 5%;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .dua span {

@@ -32,13 +32,6 @@ const Jumbotron = () => {
             </h1>
           </div>
         </div>
-        {/* <div className="slogan-dua">
-          <h1>
-            THROUGH
-            <br />
-            <span>MULTIMEDIA</span>
-          </h1>
-        </div> */}
       </div>
     </>
   );
