@@ -1,8 +1,8 @@
-import React from "react";
-import logo from "../../assets/image/logo.png";
-import "./navbar.css";
-import { useState } from "react";
-import yellowVoyage from "../../assets/image/Voyage-yellow.png";
+import React from 'react';
+import logo from '../../assets/image/logo.png';
+import './navbar.css';
+import { useState } from 'react';
+import yellowVoyage from '../../assets/image/Voyage-yellow.png';
 
 const Navbar = () => {
   const [color, setColor] = useState(false);
@@ -14,14 +14,14 @@ const Navbar = () => {
     }
   };
 
-  window.addEventListener("scroll", changeColor);
+  window.addEventListener('scroll', changeColor);
 
   return (
     <>
       <div className="voyage">
         <img src={yellowVoyage} alt="Voyage" />
       </div>
-      <nav className={color ? "header header-bg" : "header"}>
+      <nav className={color ? 'header header-bg' : 'header'}>
         <div className="logo">
           <a href="#">
             <img src={logo} alt="logo" />
