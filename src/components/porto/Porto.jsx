@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { BsArrowBarRight } from "@react-icons/all-files/bs/BsArrowBarRight";
 import Play from "./play-btn/Play";
+import { Link } from "react-router-dom";
 
 function Porto() {
   const [fadeIn, setFadeIn] = useState(false);
@@ -221,9 +222,9 @@ function Porto() {
         </div>
         <div className="sfm">
           <button>
-            <a href="#">
+            <Link to="/Works">
               SEE FOR MORE <BsArrowBarRight className="arrowIc" />
-            </a>
+            </Link>
           </button>
         </div>
       </div>

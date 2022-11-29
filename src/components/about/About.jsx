@@ -24,14 +24,14 @@ function About() {
     }
   };
 
-  // const [diveIn, setDiveIn] = useState(false);
-  // const surfaceIn = () => {
-  //   if (window.scrollY >= 2700) {
-  //     setDiveIn(true);
-  //   } else {
-  //     setDiveIn(false);
-  //   }
-  // };
+  const [diveIn, setDiveIn] = useState(false);
+  const surfaceIn = () => {
+    if (window.scrollY >= 2700) {
+      setDiveIn(true);
+    } else {
+      setDiveIn(false);
+    }
+  };
 
   const [quotesIn, setQuotesIn] = useState(false);
   const motivateIn = () => {
@@ -44,7 +44,7 @@ function About() {
 
   window.addEventListener("scroll", cornerIn);
   window.addEventListener("scroll", whiteIn);
-  // window.addEventListener("scroll", surfaceIn);
+  window.addEventListener("scroll", surfaceIn);
   window.addEventListener("scroll", motivateIn);
 
   return (
@@ -73,30 +73,42 @@ function About() {
             <br />
             <br />
             <p>
-              A creative production team that mainly works in the fields of
-              videography and photography located in Bandung, West Java.
+              A creative production team
               <br />
+              that mainly works in the fields of
               <br />
+              videography and photography
+              <br />
+              located in Bandung, West Java, Indonesia.
+            </p>
+          </div>
+        </div>
+        <div className={diveIn ? "about-bts about-bts-in" : "about-bts"}>
+          <div className="about-bts-text">
+            <h2>Fitor Voyage</h2>
+            <br />
+            <br />
+            <p>
               We believe in terms of creative project, a proper communication is
               a necessity to gain mutual understanding in order to achieve a
               perfect impectful results.
             </p>
           </div>
-        </div>
-        <div className="about-bts">
-          <ReactPlayer
-            className="about-bts-vids"
-            url={
-              "https://www.youtube.com/watch?v=utbIGXsoRM0rel=0&iv_load_policy=3&disablekb=1"
-            }
-            muted={true}
-            playing={true}
-            loop={true}
-            controls={false}
-            height="55vh"
-            width="100%"
-          />
-          <div className="tutup"></div>
+          <div className="about-bts-vids">
+            <ReactPlayer
+              className="react-player-bts"
+              url={
+                "https://www.youtube.com/watch?v=utbIGXsoRM0rel=0&iv_load_policy=3&disablekb=1"
+              }
+              muted={true}
+              playing={true}
+              loop={true}
+              controls={false}
+              height="50vh"
+              width="100%"
+            />
+            <div className="tutup"></div>
+          </div>
         </div>
         <div className={quotesIn ? "quotes quotes-in" : "quotes"}>
           <p>

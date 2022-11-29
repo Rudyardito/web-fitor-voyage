@@ -7,20 +7,22 @@
 }
 
 .header {
-  width: 100%;
+  width: 8%;
   display: flex;
   justify-content: space-between;
-  height: 8vh;
+  height: 15vh;
   position: fixed;
+  border-radius: 0 0 50% 0;
   top: -100%;
   z-index: 7;
   transition: all 0.5s;
+  background-color: #03999e93;
 }
 
 .logo {
   padding: 15px;
   position: relative;
-  left: -100%;
+  top: -100%;
 }
 
 .voyage {
@@ -58,7 +60,7 @@
   cursor: pointer;
 }
 
-.navigation {
+/* .navigation {
   margin-right: 50px;
   margin-top: -5px;
   height: 70px;
@@ -83,17 +85,18 @@
 .navigation ul li a:hover {
   text-decoration: underline;
   cursor: pointer;
-}
+} */
 
 .header-bg {
-  background-color: #03999e93;
-  top: 0px;
+  background-color: #03999ea4;
+  top: 0;
 }
 
-.header-bg .navigation {
+/* .header-bg .navigation {
   right: 0px;
+  opacity: 0;
   transition: all 1s;
-}
+} */
 
 .header-bg .header {
   top: 0px;
@@ -101,6 +104,38 @@
 }
 
 .header-bg .logo {
-  left: 0px;
+  top: 0px;
   transition: all 1s;
+}
+
+.hamburger {
+  width: 5%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #03999e;
+  transition: all 0.5s;
+  margin-right: 0;
+  z-index: 9;
+  position: fixed;
+  right: 1%;
+  top: -100%;
+}
+
+.hamburger-in {
+  /* margin-right: 0;
+  z-index: 9;
+  position: fixed;
+  right: 1%; */
+  top: 0.8%;
+  /* width: 5%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #03999e;
+  transition: all 0.5s; */
 }
