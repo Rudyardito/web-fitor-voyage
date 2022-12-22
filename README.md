@@ -13,12 +13,15 @@ Create a website for a company/production team called [Fitor Voyage](https://www
 ## Contributors
 
 Andhiko Rudyardito
+
 GitHub: [dito058](https://github.com/dito058)
 
 Aris Putra Madya
+
 GitHub: [arispm](https://github.com/arispm)
 
 Nuzulul Aulia
+
 GitHub: [nuzulul19](https://github.com/nuzulul19)
 
 ## Contact
