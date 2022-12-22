@@ -1,6 +1,6 @@
 # About our project
 
-Create a website for a company/production team called [Fitor Voyage](https://www.instagram.com/fitorvoyage.id/)
+We build a website for a company/production team called [Fitor Voyage](https://www.instagram.com/fitorvoyage.id/)
 
 ## Build With
 
