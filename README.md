@@ -22,5 +22,4 @@ Nuzulul Aulia - GitHub: [nuzulul19](https://github.com/nuzulul19)
 
 Andhiko Rudyardito - rudyardito058@gmail.com
 
-Project Link: (https://github.com/dito058/web-fitor-voyage)
 
